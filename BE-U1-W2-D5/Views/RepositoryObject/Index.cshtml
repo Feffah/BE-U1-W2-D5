@@ -1,118 +1,74 @@
 ﻿@model List<Scarpa>
 @{
-    RepositoryObject._scarpe = new();
-    Scarpa s1 = new Scarpa()
-    {
-        Id = new Guid (),
-        NomeArticolo = "Adidas Handball Spezial",
-        Prezzo = 89.00m,
-        Descrizione = "Scarpa da ginnastica colore rosa",
-        ImmagineDiCopertina = "https://assets.footlocker.com/is/image/FLDM/316706221104_02?fmt=webp-alpha&bfc=on&wid=500&hei=500",
-        ImmagineAggiuntiva = "https://assets.footlocker.com/is/image/FLDM/316706221104_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
-        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/316706221104_07?fmt=webp-alpha&bfc=on&wid=500&hei=500"
-    };
-    RepositoryObject.SaveScarpa(s1);
-    Scarpa s2 = new Scarpa()
-    {
-
-        Id = new Guid(),
-        NomeArticolo = "Nike Air Force 1 Low",
-        Prezzo = 109.00m,
-        Descrizione = "Scarpa da ginnastica colore bianco",
-        ImmagineDiCopertina = "https://assets.footlocker.com/is/image/FLDM/316705874804_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
-        ImmagineAggiuntiva = "https://assets.footlocker.com/is/image/FLDM/316475363004_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
-        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/316475363004_07?fmt=webp-alpha&bfc=on&wid=500&hei=500"
-    };
-    RepositoryObject.SaveScarpa(s2);
-
-    Scarpa s3 = new Scarpa()
-    {
-
-        Id = new Guid(),
-        NomeArticolo = "New Balance 530",
-        Prezzo = 99.00m,
-        Descrizione = "Scarpa da ginnastica colore marrone",
-        ImmagineDiCopertina = "https://assets.footlocker.com/is/image/FLDM/316705653604_02?fmt=webp-alpha&bfc=on&wid=500&hei=500",
-        ImmagineAggiuntiva = "https://assets.footlocker.com/is/image/FLDM/316705653604_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
-        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/316705653604_07?fmt=webp-alpha&bfc=on&wid=500&hei=500"
-    };
-    RepositoryObject.SaveScarpa(s3);
-
-    Scarpa s4 = new Scarpa()
-    {
-
-        Id = new Guid(),
-        NomeArticolo = "Adidas Campus 00s",
-        Prezzo = 119.00m,
-        Descrizione = "Scarpa da ginnastica colore verde",
-        ImmagineDiCopertina = "https://assets.footlocker.com/is/image/FLDM/314310885604_02?fmt=webp-alpha&bfc=on&wid=500&hei=500",
-        ImmagineAggiuntiva = "https://assets.footlocker.com/is/image/FLDM/314310885604_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
-        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/314310885604_07?fmt=webp-alpha&bfc=on&wid=500&hei=500"
-    };
-    RepositoryObject.SaveScarpa(s4);
+   
 
     Scarpa s5 = new Scarpa()
     {
 
-        Id = new Guid(),
+        Id = Guid.NewGuid(),
         NomeArticolo = "Puma Palermo",
         Prezzo = 99.00m,
         Descrizione = "Scarpa da ginnastica colore rosa",
         ImmagineDiCopertina = "https://assets.footlocker.com/is/image/FLDM/315349207902_02?fmt=webp-alpha&bfc=on&wid=500&hei=500",
         ImmagineAggiuntiva = "https://assets.footlocker.com/is/image/FLDM/315349207902_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
-        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/315349207902_07?fmt=webp-alpha&bfc=on&wid=500&hei=500"
+        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/315349207902_07?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        Logo = "https://images.seeklogo.com/logo-png/28/2/puma-se-logo-png_seeklogo-287825.png"
     };
     RepositoryObject.SaveScarpa(s5);
 
     Scarpa s6 = new Scarpa()
     {
 
-        Id = new Guid(),
+        Id = Guid.NewGuid(),
         NomeArticolo = "Converse Lift Hi",
         Prezzo = 105.00m,
         Descrizione = "Scarpa da ginnastica colore beige",
         ImmagineDiCopertina = "https://assets.footlocker.com/is/image/FLDM/315550531602_02?fmt=webp-alpha&bfc=on&wid=500&hei=500",
         ImmagineAggiuntiva = "https://assets.footlocker.com/is/image/FLDM/315550531602_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
-        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/315550531602_07?fmt=webp-alpha&bfc=on&wid=500&hei=500"
+        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/315550531602_07?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        Logo = "https://logodix.com/logo/10350.png"
     };
     RepositoryObject.SaveScarpa(s6);
 
     Scarpa s7 = new Scarpa()
     {
 
-        Id = new Guid(),
+        Id = Guid.NewGuid(),
         NomeArticolo = "Converse Pc2 Wntr",
         Prezzo = 100.00m,
         Descrizione = "Scarpa da ginnastica colore rosa",
         ImmagineDiCopertina = "https://assets.footlocker.com/is/image/FLDM/315550068902_02?fmt=webp-alpha&bfc=on&wid=500&hei=500",
         ImmagineAggiuntiva = "https://assets.footlocker.com/is/image/FLDM/315550068902_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
-        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/315550068902_07?fmt=webp-alpha&bfc=on&wid=500&hei=500"
+        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/315550068902_07?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        Logo = "https://logodix.com/logo/10350.png"
     };
     RepositoryObject.SaveScarpa(s7);
 
     Scarpa s8 = new Scarpa()
     {
 
-        Id = new Guid(),
+        Id = Guid.NewGuid(),
         NomeArticolo = "Adidas Samba",
         Prezzo = 80.00m,
         Descrizione = "Scarpa da ginnastica colore rosa",
         ImmagineDiCopertina = "https://assets.footlocker.com/is/image/FLDM/315349565002_02?fmt=webp-alpha&bfc=on&wid=500&hei=500",
         ImmagineAggiuntiva = "https://assets.footlocker.com/is/image/FLDM/315349565002_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
-        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/315349565002_07?fmt=webp-alpha&bfc=on&wid=500&hei=500"
+        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/315349565002_07?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        Logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Original_Adidas_logo.svg/768px-Original_Adidas_logo.svg.png"
     };
     RepositoryObject.SaveScarpa(s8);
 
     Scarpa s9 = new Scarpa()
     {
 
-        Id = new Guid(),
+        Id = Guid.NewGuid(),
         NomeArticolo = "Puma Palermo",
         Prezzo = 99.00m,
         Descrizione = "Scarpa da ginnastica colore panna",
         ImmagineDiCopertina = "https://assets.footlocker.com/is/image/FLDM/315349208702_02?fmt=webp-alpha&bfc=on&wid=500&hei=500",
         ImmagineAggiuntiva = "https://assets.footlocker.com/is/image/FLDM/315349208702_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
-        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/315349208702_07?fmt=webp-alpha&bfc=on&wid=500&hei=500"
+        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/315349208702_07?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        Logo = "https://images.seeklogo.com/logo-png/28/2/puma-se-logo-png_seeklogo-287825.png"
     };
     RepositoryObject.SaveScarpa(s9);
 
@@ -134,12 +90,12 @@
 
 }
 
-<div class="container-fluid">
-<div class="row justify-content-between">
+<div class="container">
+<div class="row justify-content-center d-flex">
 
     @foreach (var S in scarpe)
     {
-        <div class="col-4">
+        <div class="col-4 text-center">
         <div class="card my-2" style="width: 18rem; height: 450px;">
             <img src="@S.ImmagineDiCopertina" class="card-img-top" alt="...">
             <div class="card-body">

@@ -16,6 +16,8 @@ namespace BE_U1_W2_D5.Models
 
         public string ImmagineAggiuntiva2 { get; set; }
 
+        public string Logo { get; set; }
+
 
     }
 }

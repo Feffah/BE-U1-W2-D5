@@ -1,29 +1,109 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-}
+    RepositoryObject._scarpe = new();
+    Scarpa s1 = new Scarpa()
+    {
+        Id = Guid.NewGuid(),
+        NomeArticolo = "Adidas Handball Spezial",
+        Prezzo = 89.00m,
+        Descrizione = "Scarpa da ginnastica colore rosa",
+        ImmagineDiCopertina = "https://assets.footlocker.com/is/image/FLDM/316706221104_02?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        ImmagineAggiuntiva = "https://assets.footlocker.com/is/image/FLDM/316706221104_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/316706221104_07?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        Logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Original_Adidas_logo.svg/768px-Original_Adidas_logo.svg.png"
+    };
+    RepositoryObject.SaveScarpa(s1);
+    Scarpa s2 = new Scarpa()
+    {
+
+        Id = Guid.NewGuid(),
+        NomeArticolo = "Nike Air Force 1 Low",
+        Prezzo = 109.00m,
+        Descrizione = "Scarpa da ginnastica colore bianco",
+        ImmagineDiCopertina = "https://assets.footlocker.com/is/image/FLDM/316705874804_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        ImmagineAggiuntiva = "https://assets.footlocker.com/is/image/FLDM/316475363004_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/316475363004_07?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        Logo = "https://cdn.freebiesupply.com/logos/large/2x/nike-4-logo-png-transparent.png"
+    };
+    RepositoryObject.SaveScarpa(s2);
+
+    Scarpa s3 = new Scarpa()
+    {
+
+        Id = Guid.NewGuid(),
+        NomeArticolo = "New Balance 530",
+        Prezzo = 99.00m,
+        Descrizione = "Scarpa da ginnastica colore marrone",
+        ImmagineDiCopertina = "https://assets.footlocker.com/is/image/FLDM/316705653604_02?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        ImmagineAggiuntiva = "https://assets.footlocker.com/is/image/FLDM/316705653604_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/316705653604_07?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        Logo = "https://www.pngall.com/wp-content/uploads/15/New-Balance-Logo-PNG-Photos.png"
+    };
+    RepositoryObject.SaveScarpa(s3);
+
+    Scarpa s4 = new Scarpa()
+    {
+
+        Id = Guid.NewGuid(),
+        NomeArticolo = "Adidas Campus 00s",
+        Prezzo = 119.00m,
+        Descrizione = "Scarpa da ginnastica colore verde",
+        ImmagineDiCopertina = "https://assets.footlocker.com/is/image/FLDM/314310885604_02?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        ImmagineAggiuntiva = "https://assets.footlocker.com/is/image/FLDM/314310885604_03?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        ImmagineAggiuntiva2 = "https://assets.footlocker.com/is/image/FLDM/314310885604_07?fmt=webp-alpha&bfc=on&wid=500&hei=500",
+        Logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Original_Adidas_logo.svg/768px-Original_Adidas_logo.svg.png"
+    };
+    RepositoryObject.SaveScarpa(s4);
+
+
+    List<Scarpa> scarpe = RepositoryObject.GetAll();
+} 
 
 <div class="text-center">
     <h1 class="display-4 text-center fs-1 font-main-color  fst-italic">Welcome to <span class="fw-bold">Scarpe & Co.</span></h1>
-    <div class="container banner" style="margin-top: 100px; margin-bottom:100px">
-        <div class="row">
-            <div class="col-md-7 font-main-color d-flex flex-column justify-content-center">
-                <h3 class="text-start">Scopri le nuove</h3>
-                <h2 style="font-size:6rem;">Adidas Spezial</h2>
-                <p>Scegli il tuo stile</p>
-                <div class="shoes-carousel d-flex align-items-center justify-content-evenly">
-                    <img src="~/assets/img/adidas_spezial_pink_carousel.webp" alt="Alternate Text" />
-                    <img src="~/assets/img/adidas_spezial_beige_carousel.webp" alt="Alternate Text" />
-                    <img src="~/assets/img/adidas_spezial_black_carousel.webp" alt="Alternate Text" />
-                    <img src="~/assets/img/adidas_spezial_blue_carousel.webp" alt="Alternate Text" />
-                    <img src="~/assets/img/adidas_spezial_grey_carousel.webp" alt="Alternate Text" />
-                    <img src="~/assets/img/adidas_spezial_olive_carousel.webp" alt="Alternate Text" />
-                    <img src="~/assets/img/adidas_spezial_skyblue_carousel.webp" alt="Alternate Text" />
-                    <img src="~/assets/img/adidas_spezial_winered_carousel.webp" alt="Alternate Text" />
+    <section>
+        <div class="container banner" style="margin-top: 100px; margin-bottom:100px">
+            <div class="row">
+                <div class="col-md-7 font-main-color d-flex flex-column justify-content-center">
+                    <h3 class="text-start">Scopri le nuove</h3>
+                    <h2 style="font-size:6rem;">Adidas Spezial</h2>
+                    <p>Scegli il tuo stile</p>
+                    <div class="shoes-carousel d-flex align-items-center justify-content-evenly">
+                        <img src="~/assets/img/adidas_spezial_pink_carousel.webp" alt="Alternate Text" />
+                        <img src="~/assets/img/adidas_spezial_beige_carousel.webp" alt="Alternate Text" />
+                        <img src="~/assets/img/adidas_spezial_black_carousel.webp" alt="Alternate Text" />
+                        <img src="~/assets/img/adidas_spezial_blue_carousel.webp" alt="Alternate Text" />
+                        <img src="~/assets/img/adidas_spezial_grey_carousel.webp" alt="Alternate Text" />
+                        <img src="~/assets/img/adidas_spezial_olive_carousel.webp" alt="Alternate Text" />
+                        <img src="~/assets/img/adidas_spezial_skyblue_carousel.webp" alt="Alternate Text" />
+                        <img src="~/assets/img/adidas_spezial_winered_carousel.webp" alt="Alternate Text" />
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex flex-column justify-content-center">
+                    <img src="~/assets/img/adidas_spezial_pink.webp" alt="Adidas Spezial Rosa" style="transform: rotate(-15deg); width:100%" />
                 </div>
             </div>
-            <div class="col-md-5">
-                <img src="~/assets/img/adidas_spezial_pink.webp" alt="Adidas Spezial Rosa" style="transform: rotate(-15deg); width:100%" />
+        </div>
+    </section>
+    <section>
+        <h3 class="font-main-color">Ultimi Arrivi</h3>
+        <div class="row" style="background-color:#ffffff;">
+            <div class="col-12 d-flex justify-content-evenly align-items-center flex-wrap">
+
+                @foreach (Scarpa nomeOggetto in scarpe)
+                {
+                    <div class="card my-2" style="width: 18rem; height: 450px;">
+                        <img src="@nomeOggetto.ImmagineDiCopertina" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@nomeOggetto.NomeArticolo</h5>
+                            <p class="card-text text-truncate">@nomeOggetto.Descrizione</p>
+                            <a asp-controller="Dettaglio" asp-action="Dettaglio" asp-route-id="@nomeOggetto.Id" class="btn btn-primary">Dettagli</a>
+                        </div>
+                    </div>
+                }
+
             </div>
         </div>
-    </div>
+    </section>
+    
 </div>

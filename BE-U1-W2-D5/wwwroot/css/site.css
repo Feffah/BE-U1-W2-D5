@@ -68,3 +68,23 @@ body {
     transform: scale(1.5);
 }
 
+.card {
+    border: 1px solid rgba(245, 215, 226, 1) !important;
+}
+
+.btn {
+    background-color: #7774b8 !important;
+    border: none !important;
+}
+.container.dettaglio img {
+    width: 45%;
+    min-width: 250px;
+    margin: 10px;
+    background: #00000010;
+}
+@media only screen and (max-width: 768px) {
+    .container.dettaglio img {
+        width: 90%;
+        min-width: 90%;
+    }
+}
